@@ -2,7 +2,7 @@
   @for(singlefruit of fruitlist; track singlefruit.name; let index = $index){
 
   <app-singlefruit
-    (click)="numLog(index)"
+    (fruitname)="addComment($event, index)"
     [fruit]="singlefruit"
   ></app-singlefruit>
   }
